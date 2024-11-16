@@ -33,8 +33,8 @@ public class HomeWorkFB {
 
         Thread.sleep(4000);
 
-        WebElement haveAccount =driver.findElement(By.linkText("Already have an account?"));
-        haveAccount.click();
+        //WebElement haveAccount =driver.findElement(By.linkText("Already have an account?"));
+        //haveAccount.click();
 
 
 
