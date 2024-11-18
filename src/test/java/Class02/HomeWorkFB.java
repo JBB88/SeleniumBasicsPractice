@@ -11,6 +11,8 @@ public class HomeWorkFB {
         driver.manage().window().maximize();
         driver.get("https://www.facebook.com");
 
+        Thread.sleep(2000);
+
          WebElement name =driver.findElement(By.linkText("Create new account"));
          name.click();
 
@@ -35,6 +37,8 @@ public class HomeWorkFB {
 
         //WebElement haveAccount =driver.findElement(By.linkText("Already have an account?"));
         //haveAccount.click();
+
+        driver.close();
 
 
 
