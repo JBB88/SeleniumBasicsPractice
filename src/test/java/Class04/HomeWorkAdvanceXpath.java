@@ -44,6 +44,6 @@ public class HomeWorkAdvanceXpath {
 
         WebElement name3=driver.findElement(By.xpath("//div[@id='familyTree']/child::input[3]"));
         name3.sendKeys("child");
-        
+
     }
 }
