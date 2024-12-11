@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class WebCalendars {
+public class WebCalendarsHW {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -24,7 +24,7 @@ public class WebCalendars {
         while(notFound){
             // get current month
             String currentMonth= driver.findElement(By.xpath("//table[@id='table-day']/thead/tr[2]/th[2]")).getText();
-        if(currentMonth.equals("December 2024")){
+        if(currentMonth.equals("January 2025")){
             notFound=false; // set a condition
             // select the date
 
@@ -42,7 +42,7 @@ public class WebCalendars {
 
         // iterate
         for (WebElement date:allDates){
-            if (date.getText().equals("7")){
+            if (date.getText().equals("31") && date.getAttribute("class").equals("day")){ // to resolve which day will be selected "31"
                 date.click();
                 break;
             }
